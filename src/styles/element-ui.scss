@@ -1,0 +1,104 @@
+// cover some element-ui styles
+
+.el-breadcrumb__inner,
+.el-breadcrumb__inner a {
+  font-weight: 400 !important;
+}
+
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+// to fixed https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+.el-dialog__title {
+  font-weight: 600;
+}
+
+// refine element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+// dropdown
+.el-dropdown-menu {
+  a {
+    display: block
+  }
+}
+
+// table
+.el-table thead {
+  color: #404F61;
+}
+.el-table--border {
+  border: 0;
+}
+.el-table--small td {
+  padding: 10px 0;
+}
+.el-table--small th {
+  padding: 4px 0;
+}
+.el-table td,
+.el-table th.is-leaf {
+  border-bottom: 0;
+}
+.el-table--border td, .el-table--border th, .el-table__body-wrapper .el-table--border.is-scrolling-left~.el-table__fixed {
+  border-right-color: #fff;
+}
+.el-table--border::after, .el-table--group::after, .el-table::before {
+  background-color: transparent;
+}
+.el-table__body-wrapper {
+  color: #404F61;
+}
+
+// form
+.el-form-item__label {
+  font-size: 14px;
+  font-weight: 400;
+}
+.el-form-item,
+.el-form-item--mini.el-form-item,
+.el-form-item--small.el-form-item {
+  margin-bottom: 20px;
+}
+
+// button
+.el-button--primary.is-plain {
+  background-color: transparent;
+}
+.el-button.disabled,
+.el-button.disabled:hover,
+.el-button.disabled:focus {
+  color: #8cc5ff;
+  background-color: #ecf5ff;
+  border-color: #d9ecff;
+  cursor: not-allowed;
+}
+
+// to fix el-date-picker css style
+.el-range-separator {
+  box-sizing: content-box;
+}
